@@ -9,8 +9,8 @@ TestResults/
 node_modules/
 dist/
 coverage/
-test-results/
-playwright-report/
+frontend/test-results/
+frontend/playwright-report/
 
 # Editors / OS
 .vscode/*

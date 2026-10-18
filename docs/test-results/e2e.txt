@@ -1,0 +1,10 @@
+
+> plantcare-frontend@0.0.0 e2e
+> playwright test
+
+
+Running 1 test using 1 worker
+
+  ok 1 e2e\main-flow.spec.ts:22:1 › main scenario: register → add plant → water → growth photo → delete → log in again (3.5s)
+
+  1 passed (9.9s)

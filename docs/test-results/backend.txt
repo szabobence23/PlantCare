@@ -1,0 +1,218 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  PlantCare.Api -> C:\BME\PlantCare\backend\src\PlantCare.Api\bin\Debug\net10.0\PlantCare.Api.dll
+  PlantCare.Tests -> C:\BME\PlantCare\backend\tests\PlantCare.Tests\bin\Debug\net10.0\PlantCare.Tests.dll
+Test run for C:\BME\PlantCare\backend\tests\PlantCare.Tests\bin\Debug\net10.0\PlantCare.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.12)
+[xUnit.net 00:00:00.10]   Discovering: PlantCare.Tests
+[xUnit.net 00:00:00.17]   Discovered:  PlantCare.Tests
+[xUnit.net 00:00:00.21]   Starting:    PlantCare.Tests
+  Passed PlantCare.Tests.Unit.AuthInputValidatorTests.Password_length_boundary(password: "1234567", valid: False) [7 ms]
+  Passed PlantCare.Tests.Unit.ImageValidatorTests.Jpeg_is_detected_from_magic_bytes [5 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.Task_after_window_is_ok(offset: 30) [6 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Interval_boundaries(days: 366, valid: False) [7 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.Task_after_window_is_ok(offset: 3) [< 1 ms]
+  Passed PlantCare.Tests.Unit.AuthInputValidatorTests.Password_length_boundary(password: "12345678", valid: True) [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Interval_boundaries(days: 1, valid: True) [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Interval_boundaries(days: 365, valid: True) [< 1 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.Task_before_today_is_overdue(offset: -30) [< 1 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.Task_before_today_is_overdue(offset: -1) [1 ms]
+  Passed PlantCare.Tests.Unit.ImageValidatorTests.Size_limit_boundary [2 ms]
+  Passed PlantCare.Tests.Unit.PlantNetRecognitionServiceTests.Missing_api_key_makes_recognition_unavailable_without_calling_the_api [12 ms]
+  Passed PlantCare.Tests.Unit.ImageValidatorTests.Text_file_renamed_to_jpg_is_rejected [2 ms]
+  Passed PlantCare.Tests.Unit.ImageValidatorTests.Empty_file_is_rejected [< 1 ms]
+  Passed PlantCare.Tests.Unit.ImageValidatorTests.Gif_is_rejected [< 1 ms]
+  Passed PlantCare.Tests.Unit.ImageValidatorTests.Png_is_detected_from_magic_bytes [< 1 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.Task_falling_on_today_is_due [4 ms]
+  Passed PlantCare.Tests.Unit.AppClockTests.Winter_time_offset_is_one_hour [16 ms]
+  Passed PlantCare.Tests.Unit.AppClockTests.Shortly_after_midnight_in_Budapest_is_already_the_next_day [< 1 ms]
+  Passed PlantCare.Tests.Unit.AuthInputValidatorTests.Valid_registration_has_no_errors [6 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.Recording_care_moves_last_done_and_adds_event [5 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.Task_within_window_is_upcoming(offset: 1) [< 1 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.Task_within_window_is_upcoming(offset: 2) [< 1 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.NextDue_crosses_month_and_year_boundaries [< 1 ms]
+  Passed PlantCare.Tests.Unit.CareScheduleTests.NextDue_is_last_done_plus_interval [< 1 ms]
+  Passed PlantCare.Tests.Unit.AuthInputValidatorTests.Invalid_email_is_rejected(email: "nem-email") [6 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Missing_name_is_rejected(name: null) [13 ms]
+  Passed PlantCare.Tests.Unit.AuthInputValidatorTests.Invalid_email_is_rejected(email: "an na@example.com") [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Missing_name_is_rejected(name: "") [< 1 ms]
+  Passed PlantCare.Tests.Unit.AuthInputValidatorTests.Invalid_email_is_rejected(email: "") [< 1 ms]
+  Passed PlantCare.Tests.Unit.AuthInputValidatorTests.Invalid_email_is_rejected(email: "anna@") [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Missing_name_is_rejected(name: "   ") [< 1 ms]
+  Passed PlantCare.Tests.Unit.AuthInputValidatorTests.Invalid_email_is_rejected(email: "anna@example") [< 1 ms]
+  Passed PlantCare.Tests.Unit.AuthInputValidatorTests.Email_is_normalized [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Zero_or_negative_feeding_interval_is_rejected(days: 0) [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Zero_or_negative_feeding_interval_is_rejected(days: -7) [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Species_is_optional [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Zero_or_negative_watering_interval_is_rejected(days: 0) [14 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Zero_or_negative_watering_interval_is_rejected(days: -1) [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Zero_or_negative_watering_interval_is_rejected(days: -365) [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Valid_input_has_no_errors [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Name_length_boundary [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Last_care_dates_today_are_accepted_but_future_dates_are_not [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantInputValidatorTests.Missing_interval_is_rejected [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantNetRecognitionServiceTests.Parses_suggestions_ordered_by_score [50 ms]
+  Passed PlantCare.Tests.Unit.PlantNetRecognitionServiceTests.Api_errors_make_recognition_unavailable(status: TooManyRequests) [6 ms]
+[testcontainers.org 00:00:00.14] Connected to Docker:
+  Host: npipe://./pipe/docker_engine
+  Server Version: 29.7.2
+  Kernel Version: 6.18.33.2-microsoft-standard-WSL2
+  API Version: 1.55
+  Operating System: Docker Desktop
+  Total Memory: 6.70 GB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+[testcontainers.org 00:00:00.40] Docker container bf6e2fcee5a7 created
+[testcontainers.org 00:00:00.46] Start Docker container bf6e2fcee5a7
+[testcontainers.org 00:00:00.64] Wait for Docker container bf6e2fcee5a7 to complete readiness checks
+  Passed PlantCare.Tests.Unit.PlantNetRecognitionServiceTests.Api_errors_make_recognition_unavailable(status: Unauthorized) [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantNetRecognitionServiceTests.Api_errors_make_recognition_unavailable(status: InternalServerError) [< 1 ms]
+  Passed PlantCare.Tests.Unit.PlantNetRecognitionServiceTests.Sends_photo_and_key_to_identify_endpoint [1 ms]
+  Passed PlantCare.Tests.Unit.PlantNetRecognitionServiceTests.Not_found_means_no_suggestions [< 1 ms]
+[testcontainers.org 00:00:01.68] Docker container bf6e2fcee5a7 ready
+[testcontainers.org 00:00:01.82] Docker container a0fab0a7b1df created
+[testcontainers.org 00:00:01.84] Start Docker container a0fab0a7b1df
+[testcontainers.org 00:00:02.02] Wait for Docker container a0fab0a7b1df to complete readiness checks
+[testcontainers.org 00:00:02.03] Execute "pg_isready --host localhost --dbname postgres --username postgres" at Docker container a0fab0a7b1df
+[testcontainers.org 00:00:03.10] Execute "pg_isready --host localhost --dbname postgres --username postgres" at Docker container a0fab0a7b1df
+[testcontainers.org 00:00:04.17] Execute "pg_isready --host localhost --dbname postgres --username postgres" at Docker container a0fab0a7b1df
+[testcontainers.org 00:00:04.22] Docker container a0fab0a7b1df ready
+fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+      Failed executing DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20411]
+      Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+info: Microsoft.EntityFrameworkCore.Migrations[20402]
+      Applying migration '20261018135809_InitialCreate'.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\BME\PlantCare\backend\src\PlantCare.Api
+  Passed PlantCare.Tests.Integration.RecognitionApiTests.Unavailable_service_returns_503_with_a_manual_entry_hint [1 s]
+  Passed PlantCare.Tests.Integration.RecognitionApiTests.Valid_image_is_sent_to_the_recognition_service_and_suggestions_returned [133 ms]
+  Passed PlantCare.Tests.Integration.RecognitionApiTests.Invalid_file_is_rejected_without_calling_the_recognition_service [65 ms]
+  Passed PlantCare.Tests.Integration.RecognitionApiTests.Nothing_recognised_returns_empty_suggestion_list [56 ms]
+  Passed PlantCare.Tests.Integration.RecognitionApiTests.Missing_file_is_rejected [56 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Zero_or_negative_interval_is_rejected_and_nothing_is_saved(watering: 7, feeding: 0, field: "feedingIntervalDays") [163 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Zero_or_negative_interval_is_rejected_and_nothing_is_saved(watering: 0, feeding: 14, field: "wateringIntervalDays") [61 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Zero_or_negative_interval_is_rejected_and_nothing_is_saved(watering: 7, feeding: -1, field: "feedingIntervalDays") [60 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Zero_or_negative_interval_is_rejected_and_nothing_is_saved(watering: -3, feeding: 14, field: "wateringIntervalDays") [59 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Other_users_plant_is_invisible_and_cannot_be_changed [465 ms]
+fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+      Failed executing DbCommand (1ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      UPDATE "Plants" SET "WateringIntervalDays" = @p0
+      WHERE "Id" = @p1;
+fail: Microsoft.EntityFrameworkCore.Update[10000]
+      An exception occurred in the database while saving changes for context type 'PlantCare.Api.Data.AppDbContext'.
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+       ---> Npgsql.PostgresException (0x80004005): 23514: new row for relation "Plants" violates check constraint "CK_Plants_WateringIntervalDays_Positive"
+      DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+        Exception data:
+          Severity: ERROR
+          SqlState: 23514
+          MessageText: new row for relation "Plants" violates check constraint "CK_Plants_WateringIntervalDays_Positive"
+          Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+          SchemaName: public
+          TableName: Plants
+          ConstraintName: CK_Plants_WateringIntervalDays_Positive
+          File: execMain.c
+          Line: 2074
+          Routine: ExecConstraints
+         --- End of inner exception stack trace ---
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+       ---> Npgsql.PostgresException (0x80004005): 23514: new row for relation "Plants" violates check constraint "CK_Plants_WateringIntervalDays_Positive"
+      DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+        Exception data:
+          Severity: ERROR
+          SqlState: 23514
+          MessageText: new row for relation "Plants" violates check constraint "CK_Plants_WateringIntervalDays_Positive"
+          Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+          SchemaName: public
+          TableName: Plants
+          ConstraintName: CK_Plants_WateringIntervalDays_Positive
+          File: execMain.c
+          Line: 2074
+          Routine: ExecConstraints
+         --- End of inner exception stack trace ---
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Missing_name_and_future_dates_are_rejected [56 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Valid_plant_is_created_and_appears_in_own_list [72 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Species_can_be_given_manually_or_left_empty_without_photo [70 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Non_numeric_interval_is_rejected [59 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Deleting_a_missing_plant_returns_404 [57 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Database_rejects_non_positive_interval_even_if_validation_is_bypassed [123 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.List_shows_due_overdue_upcoming_and_ok_tasks_most_urgent_first [82 ms]
+  Passed PlantCare.Tests.Integration.PlantsApiTests.Deleted_plant_disappears_together_with_its_events_and_photos [179 ms]
+  Passed PlantCare.Tests.Integration.PhotosApiTests.Photo_given_at_creation_is_the_first_growth_photo [71 ms]
+  Passed PlantCare.Tests.Integration.PhotosApiTests.Plant_with_invalid_photo_is_not_created [63 ms]
+  Passed PlantCare.Tests.Integration.PhotosApiTests.Non_image_file_is_rejected_and_not_stored [73 ms]
+  Passed PlantCare.Tests.Integration.PhotosApiTests.Uploaded_photos_are_kept_in_chronological_order_and_retrievable [90 ms]
+  Passed PlantCare.Tests.Integration.MigrationTests.All_migrations_are_applied_and_model_has_no_unmigrated_changes [23 ms]
+  Passed PlantCare.Tests.Integration.CareEventsApiTests.Watering_records_todays_event_and_moves_next_due_date [82 ms]
+  Passed PlantCare.Tests.Integration.CareEventsApiTests.Feeding_moves_only_the_feeding_schedule [71 ms]
+  Passed PlantCare.Tests.Integration.CareEventsApiTests.Unknown_care_type_is_rejected(body: "{\"type\":\"pruning\"}") [72 ms]
+  Passed PlantCare.Tests.Integration.CareEventsApiTests.Unknown_care_type_is_rejected(body: "nem json") [69 ms]
+  Passed PlantCare.Tests.Integration.CareEventsApiTests.Unknown_care_type_is_rejected(body: "{}") [67 ms]
+  Passed PlantCare.Tests.Integration.CareEventsApiTests.History_lists_every_event_newest_first [84 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Invalid_or_missing_registration_data_is_rejected_with_field_errors(email: "anna@example.com", password: "rovid", fields: "password") [2 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Invalid_or_missing_registration_data_is_rejected_with_field_errors(email: "nem-email", password: "jelszo123", fields: "email") [1 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Invalid_or_missing_registration_data_is_rejected_with_field_errors(email: "", password: "", fields: "email,password") [1 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Wrong_password_is_rejected(password: "JELSZO123") [118 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Wrong_password_is_rejected(password: "rosszjelszo") [106 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Protected_endpoints_require_a_valid_token(method: "POST", url: "/api/plant-recognition") [10 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Protected_endpoints_require_a_valid_token(method: "GET", url: "/api/plants") [1 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Protected_endpoints_require_a_valid_token(method: "DELETE", url: "/api/plants/8d1f5b1e-0000-0000-0000-000000000000") [1 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[testcontainers.org 00:00:09.11] Delete Docker container a0fab0a7b1df
+[xUnit.net 00:00:09.81]   Finished:    PlantCare.Tests
+  Passed PlantCare.Tests.Integration.AuthApiTests.Unknown_email_gets_the_same_error_as_wrong_password [7 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Valid_registration_creates_account_and_user_can_log_in [111 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Empty_body_is_rejected [2 ms]
+  Passed PlantCare.Tests.Integration.AuthApiTests.Email_already_registered_is_rejected_case_insensitively [57 ms]
+Test Run Successful.
+Total tests: 91
+     Passed: 91
+ Total time: 10.2935 Seconds
