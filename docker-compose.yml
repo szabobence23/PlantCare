@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: plantcare-postgres
+    environment:
+      POSTGRES_DB: plantcare
+      POSTGRES_USER: plantcare
+      POSTGRES_PASSWORD: plantcare
+    ports:
+      # 5433 on the host, so it does not clash with a locally installed PostgreSQL on 5432.
+      - "5433:5432"
+    volumes:
+      - plantcare-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U plantcare -d plantcare"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  plantcare-pgdata:
