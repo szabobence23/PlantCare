@@ -1,16 +1,9 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { api } from '../api/api'
 import { onUnauthorized, session } from '../api/client'
+import { AuthContext, type AuthContextValue } from './useAuth'
 
-interface AuthContextValue {
-  email: string | null
-  login: (email: string, password: string) => Promise<void>
-  register: (email: string, password: string) => Promise<void>
-  logout: () => void
-}
-
-const AuthContext = createContext<AuthContextValue | null>(null)
-
+/** Holds the signed-in user's e-mail; the JWT itself lives in localStorage (see api/client.ts). */
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [email, setEmail] = useState<string | null>(() => (session.token() ? session.email() : null))
 
@@ -43,10 +36,4 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   )
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
-}
-
-export function useAuth(): AuthContextValue {
-  const ctx = useContext(AuthContext)
-  if (!ctx) throw new Error('useAuth must be used inside <AuthProvider>')
-  return ctx
 }

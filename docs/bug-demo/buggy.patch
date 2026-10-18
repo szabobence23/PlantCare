@@ -1,0 +1,14 @@
+diff --git a/backend/src/PlantCare.Api/Domain/CareSchedule.cs b/backend/src/PlantCare.Api/Domain/CareSchedule.cs
+index 20858ff..eb105bc 100644
+--- a/backend/src/PlantCare.Api/Domain/CareSchedule.cs
++++ b/backend/src/PlantCare.Api/Domain/CareSchedule.cs
+@@ -12,7 +12,8 @@ public static class CareSchedule
+ 
+     public static CareStatus StatusOf(DateOnly nextDue, DateOnly today)
+     {
+-        if (nextDue < today) return CareStatus.Overdue;
++        // SZÁNDÉKOSAN HIBÁS VÁLTOZAT (docs/BUG_DEMO.md): '<=' miatt a ma esedékes teendő "Lejárt" lesz.
++        if (nextDue <= today) return CareStatus.Overdue;
+         if (nextDue == today) return CareStatus.Due;
+         if (nextDue.DayNumber - today.DayNumber <= UpcomingWindowDays) return CareStatus.Upcoming;
+         return CareStatus.Ok;

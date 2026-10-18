@@ -1,0 +1,25 @@
+# Futtatás: 2026-10-18 16:25 – SZÁNDÉKOSAN HIBÁS változat (docs/bug-demo/buggy.patch alkalmazva)
+# Parancs: dotnet test backend --filter "AC=AC3"
+
+  PlantCare.Api -> C:\BME\PlantCare\backend\src\PlantCare.Api\bin\Debug\net10.0\PlantCare.Api.dll
+  PlantCare.Tests -> C:\BME\PlantCare\backend\tests\PlantCare.Tests\bin\Debug\net10.0\PlantCare.Tests.dll
+Test run for C:\BME\PlantCare\backend\tests\PlantCare.Tests\bin\Debug\net10.0\PlantCare.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.33]     PlantCare.Tests.Unit.CareScheduleTests.Task_falling_on_today_is_due [FAIL]
+  Failed PlantCare.Tests.Unit.CareScheduleTests.Task_falling_on_today_is_due [3 ms]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: Due
+Actual:   Overdue
+  Stack Trace:
+     at PlantCare.Tests.Unit.CareScheduleTests.Task_falling_on_today_is_due() in C:\BME\PlantCare\backend\tests\PlantCare.Tests\Unit\CareScheduleTests.cs:line 29
+[xUnit.net 00:00:07.06]     PlantCare.Tests.Integration.PlantsApiTests.List_shows_due_overdue_upcoming_and_ok_tasks_most_urgent_first [FAIL]
+  Failed PlantCare.Tests.Integration.PlantsApiTests.List_shows_due_overdue_upcoming_and_ok_tasks_most_urgent_first [2 s]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: Tuple (18/10/2026, 0, Due)
+Actual:   Tuple (18/10/2026, 0, Overdue)
+  Stack Trace:
+     at PlantCare.Tests.Integration.PlantsApiTests.List_shows_due_overdue_upcoming_and_ok_tasks_most_urgent_first() in C:\BME\PlantCare\backend\tests\PlantCare.Tests\Integration\PlantsApiTests.cs:line 118
+--- End of stack trace from previous location ---
+Failed!  - Failed:     2, Passed:    11, Skipped:     0, Total:    13, Duration: 6 s - PlantCare.Tests.dll (net10.0)

@@ -1,6 +1,6 @@
 import { Leaf, LogOut, Plus } from 'lucide-react'
 import { Link, Navigate, Outlet, useLocation } from 'react-router-dom'
-import { useAuth } from '../auth/AuthContext'
+import { useAuth } from '../auth/useAuth'
 
 /** Shell of the signed-in part of the app; redirects to login when there is no session. */
 export function Layout() {
