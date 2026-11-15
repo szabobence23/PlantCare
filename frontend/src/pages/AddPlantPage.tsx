@@ -114,7 +114,7 @@ export function AddPlantPage() {
       )}
 
       <form className="form-card" onSubmit={submit} noValidate>
-        <Field id="photo" label="Fénykép (opcionális)" error={fieldErrors.photo} hint="JPEG vagy PNG, legfeljebb 10 MB. A képből fajt javaslunk.">
+        <Field id="photo" label="Fénykép (opcionális)" error={fieldErrors.photo} hint="JPEG vagy PNG, legfeljebb 10 MB.">
           {previewUrl ? (
             <div className="photo-preview">
               <img src={previewUrl} alt="A kiválasztott kép előnézete" />
