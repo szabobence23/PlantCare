@@ -45,7 +45,7 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' }) {
           <span>PlantCare</span>
         </div>
         <h1>{isLogin ? 'Bejelentkezés' : 'Regisztráció'}</h1>
-        <p className="muted">{isLogin ? 'Üdv újra! ' : 'Hozz létre fiókot a növényeid nyilvántartásához.'}</p>
+        <p className="muted">{isLogin ? 'Üdv újra!' : 'Hozz létre fiókot a növényeid nyilvántartásához.'}</p>
 
         {error && (
           <div className="alert alert-error" role="alert">

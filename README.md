@@ -1,11 +1,7 @@
 # PlantCare 🌿
 
-Növénygondozó webalkalmazás: a szobanövények nyilvántartása, locsolási és tápozási esedékességek, képes
-fejlődéskövetés és fajfelismerés fotóból (Pl@ntNet).
+*Szoftverfejlesztés MI támogatással* házi feladat
 
-BME VIK AUT – *Szoftverfejlesztés MI támogatással* házi feladat, 2026. Szabó Bence (TE6YK0).
-
-![Növény részletei](docs/screenshots/03-plant-detail.png)
 
 ## Dokumentáció
 | | |
